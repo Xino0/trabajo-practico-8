@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudiantes mayores de {{ edad }}</title>
+</head>
+<body>
+    <h1>Estudiantes mayores de {{ edad }}</h1>
+    <ul>
+        {% for estudiante in estudiantes %}
+            <li>{{ estudiante.nombre }} {{ estudiante.apellido }} - Edad: {{ estudiante.edad }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

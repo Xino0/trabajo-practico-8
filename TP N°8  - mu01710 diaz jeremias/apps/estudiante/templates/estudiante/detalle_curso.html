@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles del Curso {{ curso.nombre }}</title>
+</head>
+<body>
+    <h1>Detalles del Curso: {{ curso.nombre }}</h1>
+    <p>Cantidad de horas: {{ curso.cantidad_horas }}</p>
+    <h2>Estudiantes Inscritos</h2>
+    <ul>
+        {% for estudiante in estudiantes %}
+            <li>{{ estudiante.nombre }} {{ estudiante.apellido }} - Edad: {{ estudiante.edad }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
